@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -171,14 +171,16 @@ nav .download{
 }
 
 .container-bridge img{
-    transform: translateX(-30%);
-    margin-left: 200px;
+    transform: translateX(-20%);
+    display: flex;
+    padding-left: 3%;
 }
 
 
 .text-bridge{
-    transform: translateX(-50%);
-    margin-left: 100px;
+    margin-top: 15px;
+    transform: translateX(-30%);
+    padding-left: 20%;
 }
 
 .text-bridge h1{
@@ -221,42 +223,44 @@ nav .download{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .container-realtime img{
-    margin-left: -100%;
-    transform: translateX(50%);
+    width: 90%;
+    transform: translateX(10%);
+}
+.text-realtime{
+    transform: translateX(35%);
+    margin-bottom: 25%;
 }
 .text-realtime h1{
     width: 70%;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
     line-height: 1.2;
 }
-
 .text-realtime p{
     width: 80%;
-    margin-top: 10px;
+    margin-top: 9px;
     line-height: 1.5;
 }
-
-/* build */
-
 #build{
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    font-weight: 100; 
+    font-weight: 100;
     margin-top: 100px;
     gap: 40px;
 }
 
 .container-build img{
     transform: translateX(-30%);
-    margin-left: 200px;
 }
 
+.text-build{
+    transform: translateX(-30%);
+    margin-left: 13%;
+}
 
 .text-build h1{
     width: 70%;
@@ -284,8 +288,9 @@ nav .download{
 }
 
 
-
-/* made */
+.image-bridge {
+    margin-left: 25%;
+}
 
 #made {
     display: flex;
@@ -323,7 +328,7 @@ nav .download{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+   
     margin-top: 100px;
     text-align: center; 
 }
@@ -333,7 +338,6 @@ nav .download{
     text-decoration: none;
     position: relative;
 }
-
 .image-made a::after{
     position: absolute;
     left: 0;
@@ -344,19 +348,17 @@ nav .download{
     opacity: 0;
     transition: opacity 0.3s;
 }
-
 .image-made a:hover::after{
     opacity: 1;
 }
-
 .image-made img {
     width: 100px; 
     height: auto;
 }
-
 .image-made h1 {
     font-size: 32px;
     padding-top: 40px;
+    display: flex;
     font-weight: 300;
 }
 
@@ -454,7 +456,7 @@ footer{
     align-items: center;
 }
 
-.container-futter{
+.container-footer{
     display: flex;
     color: white;
     gap: 150px;
@@ -462,12 +464,12 @@ footer{
     padding: 10px;
 }
 
-.content-futter{
+.content-footer{
     text-decoration: none;
     justify-content: center;
 }
 
-.content-futter a{
+.content-footer a{
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -478,14 +480,14 @@ footer{
 }
 
 
-.container-futter li {
+.container-footer li {
     list-style: none;
     justify-content: center;
     margin-top: 20px;
 }
 
 
-.content-futter ul li a {
+.content-footer ul li a {
   color: rgb(183, 183, 183);
   text-decoration: none;
   font-weight: 300;
@@ -493,7 +495,7 @@ footer{
   transition: 0.5s;
 }
 
-.content-futter ul li a:hover {
+.content-footer ul li a:hover {
   color: white;
   opacity: 1;
 }
@@ -512,9 +514,9 @@ footer{
     color: #565656;
 }
 
-@media (max-width: 428px){
+@media (max-width: 768px){
     header{
-        width: 100%;
+        width: 70%;
         display: flex;
         flex-direction: column;
     }
@@ -579,6 +581,7 @@ footer{
 
     .image-brands{
         display: flex;
+        margin-left: 10%;
         flex-wrap: wrap;
     }
 
@@ -590,12 +593,6 @@ footer{
     .text-brands h2{
         font-weight: 300;
     }
-
-
-   
-
-
-
     #bridge{
         display: flex;
         flex-direction: column;
@@ -603,7 +600,8 @@ footer{
 
     .container-bridge{
         width: 100%;
-        transform: translateX(30%);
+        justify-content: center ;
+        transform: translateX(0%);
         display: flex;
         align-items: center;
     }
@@ -614,11 +612,8 @@ footer{
     }
 
     .text-bridge{
-        transform: translateX(20%);
+        transform: translateX(0%);
     }
-
-
-    
     #realtime{
         display: flex;
         flex-direction: column;
@@ -627,20 +622,22 @@ footer{
 
     .container-realtime{
         width: 100%;
-        transform: translateX(-50%);
+        transform: translateX(0%);
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
 
     .container-realtime img{
         width: 100%;
-        
+        transform: translateX(-0%);
     }
 
     .text-realtime{
         margin-top: 100px;
-        transform: translateX(70%);
+        transform: translateX(12%);
+        justify-content: center;
     }
    
     
@@ -654,7 +651,7 @@ footer{
 
     .container-build{
         width: 100%;
-        transform: translateX(30%);
+        transform: translateX(12%);
         display: flex;
         align-items: center;
     }
@@ -665,7 +662,7 @@ footer{
     }
 
     .text-build{
-        transform: translateX(20%);
+        transform: translateX(12%);
     }
 
     #made{
@@ -690,28 +687,28 @@ footer{
         font-size: 18px;
     }
 
-    /* footer */
 
     footer{
         height: 120vh;
     }
    
 
-    .container-futter{
+    .container-footer{
        display: grid;
        grid-template-columns: 1fr 1fr;
        gap: 30px;
+       align-items: center;
+       justify-content: center;
        margin-top: 150px;
        position: relative;
     }
 
-    .logo-futter{
+    .logo-footer{
         margin-top: 30px;
        text-align: center;
     }
 
-    .logo-futter p{
+    .logo-footer p{
         margin-bottom: 100px;
     }
-
-  }
+}
